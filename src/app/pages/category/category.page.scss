@@ -1,0 +1,39 @@
+.cart_container {
+  position: relative;
+  &_counter {
+    background-color: transparent;
+    color: #30656b;
+    font-size: 12px;
+    font-weight: bolder;
+    top: 4px;
+    position: absolute;
+  }
+}
+.first_letter {
+  text-transform: lowercase;
+}
+.first_letter::first-letter {
+  text-transform: uppercase;
+}
+#category {
+  ion-list {
+    margin-bottom: 0px !important;
+  }
+
+  .item {
+    ion-thumbnail {
+      width: 140px;
+      height: 90px;
+
+      img {
+        width: 140px;
+        height: 90px;
+        border-radius: 5px;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
