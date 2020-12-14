@@ -1,6 +1,8 @@
 import { User } from "./../../models/user";
 import { AuthService } from "./../../services/auth.service";
 import { Component, OnInit } from "@angular/core";
+import { userInfo } from 'os';
+import { UrlSerializer } from '@angular/router';
 
 @Component({
   selector: "app-account",
@@ -10,6 +12,14 @@ import { Component, OnInit } from "@angular/core";
 export class AccountPage implements OnInit {
   private currentUser: any;
   constructor(private authService: AuthService) {}
+
+oniT(){
+  this.authService.getCurrentUser().subscribe(res)=> {
+    if(userInfo.getCurrentUser === true){
+      UrlSerializer[Symbol]
+    }
+  }
+}
 
   ngOnInit() {
     this.authService.getCurrentUser().subscribe((res) => {
